@@ -12,10 +12,12 @@ function Feed() {
 
       <TweetBox />
 
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <Post displayName="Samantha" 
+      username="princesssam" 
+      verified text="Yoooo i did it!"
+      avatar="https://hellobark.com/wp-content/uploads/corgi-1200.jpg"
+      image="https://media4.giphy.com/media/WEiKBTaESHHhK/200.gif"/>
+      
     </div>
   );
 }

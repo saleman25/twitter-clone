@@ -19,7 +19,7 @@ function Post({
         <div className='post'>
             <div className='post_avatar'>
             
-            <Avatar src='https://hellobark.com/wp-content/uploads/corgi-1200.jpg'/>
+            <Avatar src={avatar}/>
             
             </div>
 
@@ -27,18 +27,18 @@ function Post({
                 <div className='post_header'>
                     <div className='post_headerText'>
                             <h3>
-                                Sam {" "}
+                                {displayName} {" "}
                                 <span className='post_headerSpecial'>
-                                    <VerifiedUserIcon className='post_badge' />
-                                    @sam
+                                    {verified && <VerifiedUserIcon className='post_badge' />}
+                                    @{username}
                                 </span>
                             </h3>
                     </div>
                     <div className='post_headerDescription'>
-                            <p>Ima pee myself</p>
+                            <p>{text}</p>
                     </div>
                 </div>
-                <img src='https://media4.giphy.com/media/WEiKBTaESHHhK/200.gif' alt=''/>
+                <img src={image} alt=''/>
             <div className= "post_footer">
                 <ChatBubbleOutlineIcon fontSize='small' />
                 <RepeatIcon fontSize='small' />
